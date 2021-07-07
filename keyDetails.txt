@@ -1,0 +1,53 @@
+String Methods
+==========================================
+Concat : Appends the new string with the string
+Upcase : Converts string in uppercase
+Delete : Deletes all the occourences of a substring from a string 
+replace : Replace the string with the new string
+capitalize : Capitalize the first letter and rest lowercase. 
+reverse : Reverses the characters in the string 
+length : It counts the characters in a string
+strip : Removes starting and trailing spaces from the string
+lstrip : Removes starting spaces from the string
+rstrip : Removes trailing spaces from the string. 
+gsub : Substitutes the string value with new string
+gsub! : Inplace gsub 
+
+Integers
+============================================
+3 Types 
+1. Fixnum : Numbers less than 2^62
+2. Bignum : Numbers greater than or equal to 2^62 
+3. Whole numbers : 1,2,3,4,.... 
+
+Integer Methods
+============================================
+
+even? : Number is even or not 
+odd? : Number is odd or not
+to_s : To String 
+to_f : To Float 
+
+
+Float Methods 
+============================================
+abs : Returns Absolute value
+to_s : ToString 
+
+
+Regular Expressions
+============================================
+
+^ : Beginning of String
+$ : End Of String
+. : Any Character
+* : Match 0 or more times
++ : Match 1 or more times
+? : Match 0 or 1 time
+| : Alternative
+() : Grouping
+[] : Match any string inside the square brackets 
+{} : Repitition Modifier
+\ : Escape (turn RegEx in plain character)
+
+See Rubular.com 
