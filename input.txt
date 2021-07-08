@@ -1,0 +1,3 @@
+Hello How are you doing ?
+I am doing fine
+i'm going to read this file. 
