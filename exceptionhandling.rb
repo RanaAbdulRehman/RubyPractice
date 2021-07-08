@@ -9,10 +9,30 @@
 
 ##################
 # Exception Handling
+# begin
+#     file1 = File.open("inputx.txt",'r')
+#     puts file1.read()
+#     file1.close
+# rescue
+#     raise("File Not Found.Please Make sure to write correct file name")    
+# end
+
+
+# Ruby program to illustrate 
+# use of ensure statement
+  
 begin
-    file1 = File.open("inputx.txt",'r')
-    puts file1.read()
-    file1.close
-rescue
-    raise("File Not Found.Please Make sure to write correct file name")    
-end
+         
+    # using raise to create an exception  
+    raise 'Exception Created!'
+   
+    puts 'After Exception' 
+   
+  # using Rescue statement
+  rescue    
+    puts 'Finally Saved!'
+    
+# using ensure statement  
+ensure
+   puts 'ensure block execute'
+end    
