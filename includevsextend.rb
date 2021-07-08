@@ -1,32 +1,34 @@
-# Ruby program of Include and Extend
+# # Ruby program of Include and Extend
   
-# Creating a module contains a method
-module Geek
-    def geeks
-      puts 'GeeksforGeeks!'
-    end
-  end
+# # Creating a module contains a method
+# module Geek
+#     def geeks
+#       puts 'GeeksforGeeks!'
+#     end
+#   end
      
-  class Lord
+#   class Lord
     
-    # only can access geek methods
-    # with the instance of the class.
-    include Geek
-  end
+#     # only can access geek methods
+#     # with the instance of the class.
+#     include Geek
+#   end
      
-  class Star
+#   class Star
       
-    # only can access geek methods
-    # with the class definition.
-    extend Geek
-  end
+#     # only can access geek methods
+#     # with the class definition.
+#     extend Geek
+#   end
      
-  # object access 
-  Lord.new.geeks
+#   # object access 
+#   Lord.new.geeks
     
-  # class access
-  Star.geeks 
+#   # class access
+#   Star.geeks 
     
-  # NoMethodError: undefined  method
-  # `geeks' for Lord:Class
-  Lord.geeks 
+#   # NoMethodError: undefined  method
+#   # `geeks' for Lord:Class
+#   Lord.geeks 
+
+p (1..5)
