@@ -1,0 +1,28 @@
+
+<p>
+  <strong>Meal type:</strong>
+  <%= @entry.meal_type %>
+</p>
+
+<p>
+  <strong>Calories:</strong>
+  <%= @entry.calories %>
+</p>
+
+<p>
+  <strong>Protiens:</strong>
+  <%= @entry.protiens %>
+</p>
+
+<p>
+  <strong>Carbohydrates:</strong>
+  <%= @entry.carbohydrates %>
+</p>
+
+<p>
+  <strong>Fats:</strong>
+  <%= @entry.fats %>
+</p>
+
+<%= link_to 'Edit', edit_entry_path(@entry) , class: "button is-gray"%>
+<%= link_to 'Delete', entry_path(@entry), method: :delete, data: {confirm: "Are you sure??"}, class: "button is-gray" %>

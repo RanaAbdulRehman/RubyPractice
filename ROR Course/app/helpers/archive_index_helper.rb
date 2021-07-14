@@ -1,0 +1,2 @@
+module ArchiveIndexHelper
+end
