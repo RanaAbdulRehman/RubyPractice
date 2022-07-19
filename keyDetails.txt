@@ -1,0 +1,110 @@
+String Methods
+==========================================
+Concat : Appends the new string with the string
+Upcase : Converts string in uppercase
+Delete : Deletes all the occourences of a substring from a string 
+replace : Replace the string with the new string
+capitalize : Capitalize the first letter and rest lowercase. 
+reverse : Reverses the characters in the string 
+length : It counts the characters in a string
+strip : Removes starting and trailing spaces from the string
+lstrip : Removes starting spaces from the string
+rstrip : Removes trailing spaces from the string. 
+gsub : Substitutes the string value with new string
+gsub! : Inplace gsub 
+
+Integers
+============================================
+3 Types 
+1. Fixnum : Numbers less than 2^62
+2. Bignum : Numbers greater than or equal to 2^62 
+3. Whole numbers : 1,2,3,4,.... 
+
+Integer Methods
+============================================
+
+even? : Number is even or not 
+odd? : Number is odd or not
+to_s : To String 
+to_f : To Float 
+
+
+Float Methods 
+============================================
+abs : Returns Absolute value
+to_s : ToString 
+
+Variables
+=======================
+
+1. Instance Variables
+Variables of the objects is the instance Variables
+2. Class Variables
+Just like static variables, they belong to a class. Each object share
+the same class variable. Starts with @@ in ruby
+3. Global Variables
+Available globally throughout the program. Starts with $ in ruby. 
+4. Local Variabkes
+Available locally within it's scope. 
+5. Constants 
+Constants are the variables whose value can not be changed. They 
+are written in capital letters. 
+
+
+Regular Expressions
+============================================
+
+^ : Beginning of String
+$ : End Of String
+. : Any Character
+* : Match 0 or more times
++ : Match 1 or more times
+? : Match 0 or 1 time
+| : Alternative
+() : Grouping
+[] : Match any string inside the square brackets 
+{} : Repitition Modifier
+\ : Escape (turn RegEx in plain character)
+
+See Rubular.com 
+
+
+
+Encapsulation 
+=======================================
+Access Specifiers. 
+
+1. attr_accessor : This can be accessed like a public variable
+2. attr_reader : This will only be read only and we can't change 
+the value outside the class but can access it. 
+3. attr_writer : This will be write only. We can change the value 
+outside the class but can't read it. 
+4. Without any Accessor : This will be like a private variable. 
+
+
+Modules
+=======================================
+Modules can contain a set of classes,functions and constants and are used to organize the code. 
+
+To require a module in seperate file use require_relative or require, then use
+include to access the module in the file. 
+
+
+Common modes for File Handling
+========================================
+“r” : Read-only mode for a file.
+“r+” : Read-Write mode for a file.
+“w” : Write-only mode for a file.
+“w+” : Read-Write mode for a file.
+“a” : Write-only mode, if file exists it will append the data otherwise a new file will be created.
+“a+” : Read and Write mode, if file exists it will append the data otherwise a new file will be created.
+
+File Loading 
+========================================
+It means to load classes or modules from other ruby files.
+
+
+load : Reads and parses file everytime you call 'load'
+require : Reads and parses files only once. Used to import 
+libraries and we need to give absolute path of the file. 
+require_relative : requrie alternative. But give relative path. 
